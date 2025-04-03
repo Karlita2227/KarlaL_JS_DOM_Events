@@ -16,24 +16,17 @@ let directionEl = document.getElementById("clickMe");
 document.addEventListener("click", function(e) {
 
  // When a key is pressed, the element with the id of direction will show the message
- directionEl.innerText = `lorem ipsum ${e.code}`;
+ directionEl.innerText = `lorem ipsum`;
 
 });
 
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-}
+let randomColorBtn = document.querySelector("button");
+    randomColorBtn.addEventListener("click", () => {
+    document.body,style.backgroundColor = generateRandomColor ();
+})
 
-function getRandomColor() {
-    const letters = '0123456789ABCDEF';
-    let color = '#';
-    for (let i = 0; i < letters.length; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
+function generateRandomColor() {
+    let randomColorBtn = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    return generateRandomColor;
 }
-
-randomColorBtn.addEventListener('click', () => {
-    document.body.style.backgroundColor = getRandomColor();
-});
 
