@@ -24,37 +24,16 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
-console.log(getRandomInt(3));
-
-console.log(getRandomInt(1));
-
-console.log(Math.random());
-
-function countRabbits() {
-    for(let i = 1; i<= 3; i++){
-        alert("Rabbit number" + i);
-    }
-}
-
-greetingH1.addEventListener("click", countRabbits)
-
-function greet(){
-    alert("Hello!")
-}
-
-const greetingH1 = document.querySelector("#greeting");
-
-greetingH1.onclick = greet;
-
 function getRandomColor() {
     const letters = '0123456789ABCDEF';
     let color = '#';
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < letters.length; i++) {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;
 }
 
-document.addEventListener('click', () => {
+randomColorBtn.addEventListener('click', () => {
     document.body.style.backgroundColor = getRandomColor();
 });
+
