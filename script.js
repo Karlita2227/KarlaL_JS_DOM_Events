@@ -16,7 +16,7 @@ let directionEl = document.getElementById("clickMe");
 document.addEventListener("click", function(e) {
 
  // When a key is pressed, the element with the id of direction will show the message
- directionEl.innerText = `You clicked me! ${e.code}`;
+ directionEl.innerText = `You clicked me ${e.code}`;
 
 });
 
