@@ -20,13 +20,12 @@ document.addEventListener("click", function(e) {
 
 });
 
-let randomColorBtn = document.querySelector("button");
-    randomColorBtn.addEventListener("click", () => {
+randomColorBtn.addEventListener("click", () => {
     document.body,style.backgroundColor = generateRandomColor ();
 })
 
 function generateRandomColor() {
     let randomColorBtn = "#" + Math.floor(Math.random() * 16777215).toString(16);
-    return generateRandomColor;
+    return randomColor;
 }
 
