@@ -16,7 +16,14 @@ let directionEl = document.getElementById("clickMe");
 document.addEventListener("click", function(e) {
 
  // When a key is pressed, the element with the id of direction will show the message
- directionEl.innerText = `You clicked me ${e.code}`;
+ directionEl.innerText = `lorem ipsum ${e.code}`;
 
 });
 
+function countRabbits(){
+    for (let i = 1; i <=3; i++) {
+        alert("Rabbit number" + i);
+    }
+}
+
+greetingH1.addEventListener("click", countRabbits)
