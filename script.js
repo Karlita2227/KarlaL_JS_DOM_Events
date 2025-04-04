@@ -43,3 +43,14 @@ function toggleDarkMode() {
     }
   }
 
+let globalVar1 = "Hello"; 
+  globalVar2 = "World"; 
+  
+  function myFunction() {
+    console.log(globalVar1); 
+    console.log(globalVar2); 
+  }
+  
+  myFunction(); 
+  console.log(globalVar1); 
+  console.log(globalVar2);
