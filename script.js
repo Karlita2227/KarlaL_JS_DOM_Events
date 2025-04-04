@@ -1,21 +1,21 @@
-//When the dom is fully loaded, this will be fired
 document.addEventListener("DOMContentLoaded", function(){
-
-    //Get the element with an id of onload
     let onLoadEl = document.getElementById("onload");
    
-    //Add some HTML within the element we grabbed
+    onLoadEl.innerHTML = "<h1> I loaded cause the DOM was fully loaded</h1>"
+   
+   })
+document.addEventListener("DOMContentLoaded", function(){
+    let onLoadEl = document.getElementById("onload");
+   
     onLoadEl.innerHTML = "<h1> I loaded cause the DOM was fully loaded</h1>"
    
    })
 
-   //Get the element that will show our key code
-let directionEl = document.getElementById("clickMe");
+   let directionEl = document.getElementById("clickMe");
 
-// Can be changed with Key press or key up depending on what you might need
-document.addEventListener("click", function(e) {
 
- // When a key is pressed, the element with the id of direction will show the message
+   document.addEventListener("click", function(e) {
+
  directionEl.innerText = `lorem ipsum`;
 
 });
@@ -27,9 +27,16 @@ function changeBackgroundColor() {
   
 function changeBtnStyle() {
     const btn = document.querySelector(".cool-btn")
-    btn.classList.toggle("glow"); // Toggles glow effect
+    btn.classList.toggle("glow"); 
    }
   
-  document.addEventListener('click', changeBackgroundColor); 
+document.addEventListener('click', changeBackgroundColor); 
 
- 
+function toggleDarkMode() {
+    const body = body.querySelector("body");
+    body.classList.toggle('dark-mode'); 
+  }
+  
+  darkModeButton.addEventListener('click', toggleDarkMode); 
+
+  console.log(darkModeButton)
