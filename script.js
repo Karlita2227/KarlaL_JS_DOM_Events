@@ -30,13 +30,11 @@ function changeBtnStyle() {
     btn.classList.toggle("glow"); 
    }
   
-document.addEventListener('click', changeBackgroundColor); 
+    const darkModeButton = document.getElementById("dark-mode-button")
+    darkModeButton.addEventListener('click', toggleDarkMode);
 
 function toggleDarkMode() {
-    const body = body.querySelector("body");
-    body.classList.toggle('dark-mode'); 
+    const body = document.querySelector("body");
+    body.classList.toggle('dark-mode');
   }
   
-  darkModeButton.addEventListener('click', toggleDarkMode); 
-
-  console.log(darkModeButton)
