@@ -54,3 +54,17 @@ let globalVar1 = "Hello";
   myFunction(); 
   console.log(globalVar1); 
   console.log(globalVar2);
+  
+  const addTask = document.getElementById("taskInput");
+
+  function addListItem() {
+    
+    const parentList = document.getElementById("taskList");
+  
+    const listItem = document.createElement("li");
+
+    listItem.textContent = "New Item";
+  
+    parentList.appendChild(listItem);
+  }
+  
