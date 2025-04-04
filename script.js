@@ -36,5 +36,10 @@ function changeBtnStyle() {
 function toggleDarkMode() {
     const body = document.querySelector("body");
     body.classList.toggle('dark-mode');
+    if(document.getElementById('dark-mode-button').innerText==="Toggle Dark Mode") {
+    document.getElementById('dark-mode-button').innerText="Toggle Light Mode"
+    } else{
+      document.getElementById('dark-mode-button').innerText="Toggle Dark Mode"
+    }
   }
-  
+
