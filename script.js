@@ -67,4 +67,10 @@ let globalVar1 = "Hello";
   
     parentList.appendChild(listItem);
   }
+
+  const listItem = document.getElementById("myListItem");
+  const taskText = "Updated Task Text"; // Replace with your actual task text
+  listItem.textContent = taskText;
+
+  return listItem;
   

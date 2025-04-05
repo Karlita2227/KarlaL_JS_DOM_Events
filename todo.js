@@ -2,7 +2,7 @@ function createListItem(taskText) {
     return result;
   }
 
-let listItem = document.createElement('li');
+let listItem = document.createElement('ul');
 
 listItem.textContent = 'This is a list item';
 listItem.textContent = 'Home';
