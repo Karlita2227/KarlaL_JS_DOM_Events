@@ -72,5 +72,25 @@ let globalVar1 = "Hello";
   const taskText = "Updated Task Text"; // Replace with your actual task text
   listItem.textContent = taskText;
 
-  return listItem;
+  return listItem('myListItem'); {
+
+  }
+
+  function addTask(taskText) {
+    
+    const listItem = document.createElement('li');
   
+    const taskTextNode = document.createTextNode(taskText);
+  
+    listItem.appendChild(taskTextNode);
+  
+    const taskList = document.getElementById('taskList');
+  
+    taskList.appendChild(listItem);
+  }
+
+addTask('Home');
+addTask('Second Page');
+addTask('Disneyland');
+addTask('Fun things to Do');
+addTask('Inital Text');
