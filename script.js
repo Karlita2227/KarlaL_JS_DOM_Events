@@ -42,6 +42,8 @@ function toggleDarkMode() {
     }
   }
 
+  document.addEventListener('click', changeBackgroundColor);
+
 let globalVar1 = "Hello"; 
   globalVar2 = "World"; 
   
@@ -67,28 +69,12 @@ let globalVar1 = "Hello";
   const taskText = "Updated Task Text"; 
   listItem.textContent = taskText;
 
-  return listItem('myListItem'); {
-
-  }
-
   console.log(myListItem);
-
-  function addTask(taskText) {
-    const listItem = document.createElement('li');
-    const taskTextNode = document.createTextNode(taskText);
-    listItem.appendChild(taskTextNode);
-    const taskList = document.getElementById('taskList');
-    taskList.appendChild(listItem);
-  }
-
-  console.log(taskText);
-
 
 addTask('Home');
 addTask('Second Page');
 addTask('Disneyland');
 addTask('Fun things to Do');
-addTask('Inital Text');
 
 const taskList = document.getElementById('taskList');
 
