@@ -94,5 +94,11 @@ const taskList = document.getElementById('taskList');
 
 console.log(taskList);
 
+const toggleButton = document.querySelector('.ToogleButton');
+
+toggleButton.addEventListener('click', () => {
+  document.body.classList.toggle('green'); 
+});
+
 
 

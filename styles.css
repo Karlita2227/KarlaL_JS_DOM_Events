@@ -7,3 +7,11 @@
     text-decoration: line-through;
     color: green;
   }
+
+  body {
+    background-color: green; 
+  }
+  
+  body.dark-mode {
+    background-color: darkgray; 
+  }
