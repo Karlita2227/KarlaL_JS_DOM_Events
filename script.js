@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
    document.addEventListener("click", function(e) {
-
  directionEl.innerText = `lorem ipsum`;
 
 });
@@ -58,36 +57,32 @@ let globalVar1 = "Hello";
   const addTask = document.getElementById("taskInput");
 
   function addListItem() {
-    
     const parentList = document.getElementById("taskList");
-  
     const listItem = document.createElement("li");
-
     listItem.textContent = "New Item";
-  
     parentList.appendChild(listItem);
   }
 
   const listItem = document.getElementById("myListItem");
-  const taskText = "Updated Task Text"; // Replace with your actual task text
+  const taskText = "Updated Task Text"; 
   listItem.textContent = taskText;
 
   return listItem('myListItem'); {
 
   }
 
+  console.log(myListItem);
+
   function addTask(taskText) {
-    
     const listItem = document.createElement('li');
-  
     const taskTextNode = document.createTextNode(taskText);
-  
     listItem.appendChild(taskTextNode);
-  
     const taskList = document.getElementById('taskList');
-  
     taskList.appendChild(listItem);
   }
+
+  console.log(taskText);
+
 
 addTask('Home');
 addTask('Second Page');
@@ -97,9 +92,7 @@ addTask('Inital Text');
 
 const taskList = document.getElementById('taskList');
 
-taskList.addEventListener('click', function(event) {
-  if (event.target.classList.contains('toggleButton')) {
-    const listItem = event.target.parentNode;
-    listItem.classList.toggle('completed');
-  }
-});
+console.log(taskList);
+
+
+
