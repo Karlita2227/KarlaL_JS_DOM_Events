@@ -94,3 +94,12 @@ addTask('Second Page');
 addTask('Disneyland');
 addTask('Fun things to Do');
 addTask('Inital Text');
+
+const taskList = document.getElementById('taskList');
+
+taskList.addEventListener('click', function(event) {
+  if (event.target.classList.contains('toggleButton')) {
+    const listItem = event.target.parentNode;
+    listItem.classList.toggle('completed');
+  }
+});
