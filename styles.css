@@ -1,9 +1,9 @@
-.dark-mode {
+  dark-mode {
     background-color: #222; 
     color: #fff; 
   }
 
-  .completed {
+  completed {
     text-decoration: line-through;
     color: green;
   }
