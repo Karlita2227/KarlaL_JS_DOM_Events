@@ -20,10 +20,10 @@ document.addEventListener("keydown", function(e) {
 
 });
 
-const button = document.getElementById("clickMe");
-  document.addEventListener("onClick", function(e) {
-    directionE1.innerText =`You clicked me!`;
-  }
+let button = document.getElementById("clickMe");
+  document.addEventListener("onClick", function(innerText) {
+    directionEl.onpointerenter = `You clicked me!`;
+  });
 
 
 // document.addEventListener("DOMContentLoaded", function(){
