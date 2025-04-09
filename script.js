@@ -32,6 +32,12 @@ function changeBackgroundColor() {
     document.body.style.backgroundColor = randomColor; 
   }
 
+  function changeBtnStyle() {
+    const btn = document.querySelector(".cool-btn")
+    btn.classList.toggle("glow"); // Toggles glow effect
+   }
+   
+
 
 // document.addEventListener("DOMContentLoaded", function(){
 //     let onLoadEl = document.getElementById("onload");
