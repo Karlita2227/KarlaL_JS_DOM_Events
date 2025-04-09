@@ -1,14 +1,35 @@
-function createListItem(taskText) {
-    return result;
-  }
 
-let listItem = document.createElement('ul');
+const taskInput = document.getElementById("taskInput");
+const addTaskButton = document.getElementById("addTask");
+const taskList = document.getElementById("taskList");
 
-listItem.textContent = 'This is a list item';
-listItem.textContent = 'Home';
-listItem.textContent = 'Second Page';
-listItem.textContent = 'Disneyland';
-listItem.textContent = 'Fun Things to Do';
 
-listItem.setAttribute('class', 'my-list-item'); 
 
+addTaskButton.addEventListener("click",addTask);
+
+
+taskList.addEventListener("click", itemComplete);
+
+
+
+function itemComplete(e){
+    e.target.classList.toggle("itemComplete")
+}
+
+function createListItem(taskText){
+    const listItem = document.createElement('li');
+    const listSpan = document.createElement('span')
+    listSpan.innerHTML = taskText;
+    listItem.appendChild(listSpan);
+    return listItem
+
+}
+
+function addTask(){
+   
+    const taskText = taskInput.value;
+    const listItem = createListItem(taskText);
+    taskList.appendChild(listItem);
+    taskInput.value = "";
+
+}

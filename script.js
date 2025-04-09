@@ -32,114 +32,19 @@ function changeBackgroundColor() {
     document.body.style.backgroundColor = randomColor;
   }
 
-document.querySelector("body").style.backgroundColor = color;
+document.getElementById("dark-mode-button").addEventListener("click", dark);
 
-document.getElementById("Dark Mode").addEventListener("click", dark);
-  function dark(){
-    document.querySelector("body").classList.toggle("darkBody");
-    if(document.querySelector("#dark").innerText === "Dark Mode"){
-        document.querySelector("#dark").innerText = "Light Mode"
-    }else{
-        document.querySelector("#dark").innerText = "Dark Mode"
-    }
+function dark(){
+  document.querySelector("body").classList.toggle("darkBody");
+  if(document.querySelector("#dark").innerText === "Dark Mode"){
+      document.querySelector("#dark").innerText = "Light Mode"
+  }else{
+      document.querySelector("#dark").innerText = "Dark Mode"
   }
+}
 
   function changeBtnStyle() {
     const btn = document.querySelector(".cool-btn")
     btn.classList.toggle("glow"); // Toggles glow effect
    }
    
-// document.getElementById("dark").addEventListener("click", dark);
-
-// function dark(){
-//   document.querySelector("body").classList.toggle("darkBody");
-//   if(document.querySelector("#dark").innerText === "Dark Mode"){
-//       document.querySelector("#dark").innerText = "Light Mode"
-//   }else{
-//       document.querySelector("#dark").innerText = "Dark Mode"
-//   }
-  
-// }
-
-
-
-// document.addEventListener("DOMContentLoaded", function(){
-//     let onLoadEl = document.getElementById("onload");
-   
-//     onLoadEl.innerHTML = "<h1> I loaded cause the DOM was fully loaded</h1>"
-   
-//    })
-// document.addEventListener("DOMContentLoaded", function(){
-//     let onLoadEl = document.getElementById("onload");
-   
-//     onLoadEl.innerHTML = "<h1> I loaded cause the DOM was fully loaded</h1>"
-   
-//    })
-
-//    let directionEl = document.getElementById("clickMe");
-
-
-//    document.addEventListener("click", function(e) {
-//  directionEl.innerText = `lorem ipsum`;
-
-// });
-
-// function changeBackgroundColor() {
-//     let randomColor = "#" + Math.floor(Math.random()*16777215).toString(16); 
-//     document.body.style.backgroundColor = randomColor; 
-//   }
-  
-// function changeBtnStyle() {
-//     const btn = document.querySelector(".cool-btn")
-//     btn.classList.toggle("glow"); 
-//    }
-  
-// const darkModeButton = document.getElementById("dark-mode-button")
-//     darkModeButton.addEventListener('click', toggleDarkMode);
-
-//   document.addEventListener('click', changeBackgroundColor);
-
-// let globalVar1 = "Hello"; 
-//   globalVar2 = "World"; 
-  
-//   function myFunction() {
-//     console.log(globalVar1); 
-//     console.log(globalVar2); 
-//   }
-  
-//   myFunction(); 
-//   console.log(globalVar1); 
-//   console.log(globalVar2);
-  
-//   const addTask = document.getElementById("taskInput");
-
-//   function addListItem() {
-//     const parentList = document.getElementById("taskList");
-//     const listItem = document.createElement("li");
-//     listItem.textContent = "New Item";
-//     parentList.appendChild(listItem);
-//   }
-
-//   const listItem = document.getElementById("myListItem");
-//   const taskText = "Updated Task Text"; 
-//   listItem.textContent = taskText;
-
-//   console.log(myListItem);
-
-// addTask('Home');
-// addTask('Second Page');
-// addTask('Disneyland');
-// addTask('Fun things to Do');
-
-// const taskList = document.getElementById('taskList');
-
-// console.log(taskList);
-
-// const toggleButton = document.querySelector('.ToogleButton');
-
-// toggleButton.addEventListener('click', () => {
-//   document.body.classList.toggle('green'); 
-// });
-
-
-

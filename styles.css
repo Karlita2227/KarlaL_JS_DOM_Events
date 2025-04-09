@@ -9,9 +9,14 @@
   }
 
   body {
-    background-color: green; 
+    background-color: pink; 
   }
   
   body.dark-mode {
     background-color: darkgray; 
   }
+
+  .itemComplete{
+    background-color: rgb(17, 240, 17);
+    text-decoration: line-through;
+}
