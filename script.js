@@ -32,18 +32,18 @@ function changeBackgroundColor() {
     document.body.style.backgroundColor = randomColor;
   }
 
-document.getElementById("dark-mode-button").addEventListener("click", dark);
+document.getElementById("dark").addEventListener("click", dark);
 
-function dark(){
-  document.querySelector("body").classList.toggle("darkBody");
-  if(document.querySelector("#dark").innerText === "Dark Mode"){
-      document.querySelector("#dark").innerText = "Light Mode"
-  }else{
-      document.querySelector("#dark").innerText = "Dark Mode"
+function dark() {
+    document.querySelector("body").classList.toggle("darkBody");
+    if(document.querySelector('#dark').innerText==="Toggle Dark Mode") {
+    document.querySelector('#dark').innerText="Toggle Light Mode"
+    } else{
+      document.querySelector('#dark').innerText="Toggle Dark Mode"
+    }
   }
-}
 
-  function changeBtnStyle() {
+function changeBtnStyle() {
     const btn = document.querySelector(".cool-btn")
     btn.classList.toggle("glow"); // Toggles glow effect
    }
