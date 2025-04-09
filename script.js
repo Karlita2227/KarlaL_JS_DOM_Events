@@ -25,6 +25,12 @@ let clickMe = document.getElementById("clickMe");
     clickMe.innerText = "You Clicked Me!";
   });
 
+document.getElementById("randomColorBtn").addEventListener("click", changeBackgroundColor);
+
+function changeBackgroundColor() {
+    let randomColor = "#" + Math.floor(Math.random()*16777215).toString(16); 
+    document.body.style.backgroundColor = randomColor; 
+  }
 
 
 // document.addEventListener("DOMContentLoaded", function(){
