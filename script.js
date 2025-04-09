@@ -29,7 +29,19 @@ document.getElementById("randomColorBtn").addEventListener("click", changeBackgr
 
 function changeBackgroundColor() {
     let randomColor = "#" + Math.floor(Math.random()*16777215).toString(16); 
-    document.body.style.backgroundColor = randomColor; 
+    document.body.style.backgroundColor = randomColor;
+  }
+
+document.querySelector("body").style.backgroundColor = color;
+
+document.getElementById("Dark Mode").addEventListener("click", dark);
+  function dark(){
+    document.querySelector("body").classList.toggle("darkBody");
+    if(document.querySelector("#dark").innerText === "Dark Mode"){
+        document.querySelector("#dark").innerText = "Light Mode"
+    }else{
+        document.querySelector("#dark").innerText = "Dark Mode"
+    }
   }
 
   function changeBtnStyle() {
@@ -37,6 +49,18 @@ function changeBackgroundColor() {
     btn.classList.toggle("glow"); // Toggles glow effect
    }
    
+// document.getElementById("dark").addEventListener("click", dark);
+
+// function dark(){
+//   document.querySelector("body").classList.toggle("darkBody");
+//   if(document.querySelector("#dark").innerText === "Dark Mode"){
+//       document.querySelector("#dark").innerText = "Light Mode"
+//   }else{
+//       document.querySelector("#dark").innerText = "Dark Mode"
+//   }
+  
+// }
+
 
 
 // document.addEventListener("DOMContentLoaded", function(){
@@ -70,18 +94,8 @@ function changeBackgroundColor() {
 //     btn.classList.toggle("glow"); 
 //    }
   
-//     const darkModeButton = document.getElementById("dark-mode-button")
+// const darkModeButton = document.getElementById("dark-mode-button")
 //     darkModeButton.addEventListener('click', toggleDarkMode);
-
-// function toggleDarkMode() {
-//     const body = document.querySelector("body");
-//     body.classList.toggle('dark-mode');
-//     if(document.getElementById('dark-mode-button').innerText==="Toggle Dark Mode") {
-//     document.getElementById('dark-mode-button').innerText="Toggle Light Mode"
-//     } else{
-//       document.getElementById('dark-mode-button').innerText="Toggle Dark Mode"
-//     }
-//   }
 
 //   document.addEventListener('click', changeBackgroundColor);
 
